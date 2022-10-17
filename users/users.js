@@ -75,6 +75,11 @@ function getInitialTodoList() {
                 genderU.innerText = `${gender}`;
                 currentLocation.innerText = `${currentCity}, ${currentCountry}`;
 
+                idU.classList.add('td-font-color')
+                fullNameU.classList.add('td-font-color')
+                genderU.classList.add('td-font-color')
+                currentLocation.classList.add('td-font-color')
+
                 uAvatar.append(uAvatarImg)
                 containerTr.append(idU)
                 containerTr.append(uAvatar)

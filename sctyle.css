@@ -19,6 +19,9 @@ a:visited{
 a:active{
     color: black;
 }
+a:link{
+    color: black;
+}
 body {
     background: rgba(240, 240, 240, 0.5);
 }
@@ -219,4 +222,7 @@ footer div{
 }
 .td-font-color{
     color: #8c8c8c;
+}
+.font-bold{
+    font-weight: 500;
 }

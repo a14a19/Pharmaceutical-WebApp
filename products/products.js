@@ -57,9 +57,14 @@ if(localStorage.getItem('a') == 'true'){
                     mNameP.innerText = `${medicineName}`;
                     mBrandP.innerText = `${medicineBrand}`;
                     expDateP.innerText = `${expiryDate}`;
-                    uPriceP.innerText = `${unitPrice}`;
+                    uPriceP.innerText = `$${unitPrice}`;
                     stockP.innerText = `${stock}`;
                     count.innerText = `Count: ${++x}`;
+
+                    idP.classList.add('td-font-color')
+                    mBrandP.classList.add('td-font-color')
+                    uPriceP.classList.add('td-font-color')
+                    stockP.classList.add('td-font-color')
     
                     containerTr.append(idP);
                     containerTr.append(mNameP);

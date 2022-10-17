@@ -56,9 +56,14 @@ if(localStorage.getItem('a') == 'true'){
                 customerM.innerText = `${customerName}`
                 dateM.innerText = `${orderDate}`
                 orderTM.innerText = `${orderTime}`
-                amountM.innerText = `${amount}`
+                amountM.innerText = `$${amount}`
                 statusM.innerText = `${orderStatus}`
                 count.innerText = `Count: ${++x}`;
+
+                idM.classList.add('td-font-color');
+                amountM.classList.add('td-font-color');
+                orderTM.classList.add('td-font-color')
+                orderTM.classList.add('font-bold')
     
                 dateTimeContainer.append(dateM)
                 dateTimeContainer.append(orderTM)
